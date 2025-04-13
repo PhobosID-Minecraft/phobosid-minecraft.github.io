@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="PhobosID's Minecraft Account Information">
+  <meta name="keywords" content="gamertag, floodgate, api, geyser, minecraft, minecraft profile, xuid, phobosid">
+  <meta name="author" content="PhobosID">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <title>PhobosID's Profile</title>
+</head>
+
+<body>
+  <header><nav class="navbar navbar-expand-md navbar-dark bg-body-tertiary mb-0"></nav></header>
+  <script src="bootstrap.min.js"></script>
+  <script src="skinview.js"></script>
+  <script src="skinview3d.bundle.js"></script>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">User Information</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="xs-col-12 col-md-4 avatar-bg">
+            <canvas id="skin_container" data-engine="three.js r142" width="375" height="525"
+              style="touch-action: none; width: 250px; height: 350px;"></canvas>
+          </div>
+          <div class="xs-col-12 col-md-8 table-responsive">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <th colspan="2" class="theader">Microsoft Account Information</th>
+                </tr>
+                <tr>
+                  <th>Gamertag</th>
+                  <td><code>PhobosID</code></td>
+                </tr>
+                <tr>
+                  <th>XUID</th>
+                  <td><code>2535455951455101</code></td>
+                </tr>
+                <tr>
+                  <th>AccountTier</th>
+                  <td><code>Silver</code></td>
+                </tr>
+                <tr>
+                  <th>Gamescore</th>
+                  <td><code>2775</code></td>
+                </tr>
+                <tr>
+                  <th colspan="2" class="theader">GeyserMC Information</th>
+                </tr>
+                <tr>
+                  <th>Geyser Linked</th>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <th>Floodgate UUID</th>
+                  <td><code>00000000-0000-0000-0009-01fbd754837d</code></td>
+                </tr>
+                <tr>
+                  <th>Java UUID</th>
+                  <td><code>291554ee-129d-4ac8-9b90-cde99071248e</code></td>
+                </tr>
+                <tr>
+                  <th>Java Name</th>
+                  <td><code>PhobosID</code></td>
+                </tr>
+                <tr>
+                  <th>Skin Url</th>
+                  <td><a href="images/45dbcba07fc8c94604c32b6c935eb3fd0229a8d23499672f9cdcb6cd17c48ce5.png" target="_blank">Skin</a></td>
+                </tr>
+                <tr>
+                  <th>Cape Url</th>
+                  <td><a href="images/8bf74079.png" target="_blank">Cape</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const skinURL ='https://textures.minecraft.net/texture/45dbcba07fc8c94604c32b6c935eb3fd0229a8d23499672f9cdcb6cd17c48ce5'
+    initSkinViewer(skinURL)
+    const capeURL = 'https://optifine.net/capes/PhobosID.png'
+    loadCape(capeURL)
+    skinViewer.loadPanorama("panorama.png")
+  </script>
